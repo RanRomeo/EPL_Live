@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Discipline"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--yellowcards-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/discipline_compare_yellowCards_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Yellow cards"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/discipline_compare_yellowCards_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Redcards-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/discipline_compare_red_cards_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Red Cards"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/discipline_compare_red_cards_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+
+
+        <!--fouls-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/discipline_compare_fouls_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Fouls"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/discipline_compare_fouls_seoncd"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="5dp"
+        />
+</LinearLayout>

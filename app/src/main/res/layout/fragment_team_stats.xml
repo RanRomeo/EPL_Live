@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Swipe"
+    tools:context="table.football.soccer.livescore.epl.epllive.Fragment_team_deatials.Fragment_team_stats">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <!--TopSats-->
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/erroText"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Try Again,Something Went Wrong"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textAlignment="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="13dp"
+                        android:background="@color/colorAccent" />
+
+                    <!--Matcplayed !! and Match Wins-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <!--Match Win-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Match Played"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/text_view_total_match_played"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:gravity="center"
+                                android:text="0"
+                                android:maxLines="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:background="@android:color/black" />
+
+                        <!--Match Win-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Wins"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_view_total_match_wins"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:gravity="center"
+                                android:text="0"
+                                android:maxLines="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorAccent" />
+
+                    <!--Matcplayed !! and Match Wins-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <!--Match Win-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Losses"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/text_view_total_match_losses"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:background="@android:color/black" />
+
+                        <!--Match Win-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Goals"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_view_total_match_goals"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorAccent" />
+                    <!--Matcplayed !! and Match Wins-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <!--Match Win-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Goals Conceded"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/text_view_total_goal_conceded"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:gravity="center"
+                                android:text="0"
+                                android:maxLines="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:background="@android:color/black" />
+
+                        <!--Match Win-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Clean Sheets"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_view_total_clean"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:gravity="center"
+                                android:text="0"
+                                android:maxLines="1"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--===============Attack=======================-->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="13dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorAccent" />
+
+                    <include layout="@layout/nested_team_detail_stats_attack" />
+
+                    <include layout="@layout/nested_team_detail_stats_defence" />
+
+                    <include layout="@layout/nested_team_detail_stats_teamplay" />
+
+                    <include layout="@layout/nested_team_detail_stats_discipline" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

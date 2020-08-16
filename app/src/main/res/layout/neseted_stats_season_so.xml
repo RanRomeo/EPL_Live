@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/this_Season_so_For"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="This Season"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        />
+   <LinearLayout
+       android:paddingStart="5dp"
+       android:paddingEnd="5dp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+
+       <!--Possesion-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:padding="10dp"
+           >
+
+           <TextView
+               android:gravity="start"
+               android:id="@+id/home_team_position"
+               android:layout_weight="0.2"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorTextStart"
+               android:textStyle="bold"
+               />
+
+           <TextView
+               android:gravity="center"
+               android:layout_weight="0.6"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="League Position"
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorPrimaryDark"
+
+               />
+
+           <TextView
+               android:id="@+id/away_team_position"
+               android:layout_gravity="end"
+               android:gravity="end"
+               android:layout_weight="0.2"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorStart"
+               android:textStyle="bold"
+               />
+
+       </LinearLayout>
+       <View style="@style/Divider"/>
+       <!--shots on target-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:padding="10dp"
+           >
+
+           <TextView
+               android:id="@+id/home_team_won"
+               android:layout_weight="0.2"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:gravity="start"
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorTextStart"
+               android:textStyle="bold"
+               />
+
+           <TextView
+               android:gravity="center"
+               android:layout_weight="0.6"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="Won"
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorPrimaryDark"
+
+               />
+
+           <TextView
+               android:id="@+id/away_team_won"
+               android:layout_gravity="end"
+               android:gravity="end"
+               android:layout_weight="0.2"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorStart"
+               android:textStyle="bold"
+               />
+
+       </LinearLayout>
+       <View style="@style/Divider"/>
+       <!--shots-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:padding="10dp"
+           >
+
+           <TextView
+               android:id="@+id/home_team_draw"
+               android:layout_weight="0.2"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:gravity="start"
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorTextStart"
+               android:textStyle="bold"
+               />
+
+           <TextView
+               android:gravity="center"
+               android:layout_weight="0.6"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="Draw"
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorPrimaryDark"
+
+               />
+
+           <TextView
+               android:id="@+id/away_team_draw"
+               android:layout_gravity="end"
+               android:gravity="end"
+               android:layout_weight="0.2"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorStart"
+               android:textStyle="bold"
+               />
+
+       </LinearLayout>
+       <View style="@style/Divider"/>
+       <!--touches-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:padding="10dp"
+           >
+
+           <TextView
+               android:id="@+id/home_team_lost"
+               android:layout_weight="0.2"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:gravity="start"
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorTextStart"
+               android:textStyle="bold"
+               />
+
+           <TextView
+               android:gravity="center"
+               android:layout_weight="0.6"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="Lost"
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorPrimaryDark"
+
+               />
+
+           <TextView
+               android:id="@+id/away_team_lost"
+               android:layout_gravity="end"
+               android:gravity="end"
+               android:layout_weight="0.2"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorStart"
+               android:textStyle="bold"
+               />
+
+       </LinearLayout>
+       <View style="@style/Divider"/>
+       <!--passes-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:padding="10dp"
+           >
+
+           <TextView
+               android:id="@+id/home_team_gd"
+               android:gravity="start"
+               android:layout_weight="0.2"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorTextStart"
+               android:textStyle="bold"
+               />
+
+           <TextView
+               android:gravity="center"
+               android:layout_weight="0.6"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="Goal difference"
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorPrimaryDark"
+
+               />
+
+           <TextView
+               android:id="@+id/away_team_gd"
+               android:layout_gravity="end"
+               android:gravity="end"
+               android:layout_weight="0.2"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+               android:textColor="@color/colorStart"
+               android:textStyle="bold"
+               />
+
+       </LinearLayout>
+       <View style="@style/Divider"/>
+
+
+   </LinearLayout>
+
+</LinearLayout>

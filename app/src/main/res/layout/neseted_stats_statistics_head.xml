@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Head_to_Head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Head-to-Head"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wins"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/total_wins_Home_team"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Played"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+            <TextView
+                android:id="@+id/total_match_played"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+
+                />
+            <!--Draw-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drawn"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+            <TextView
+                android:id="@+id/total_match_draw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wins"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/total_wins_Away_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/total_home_wins_home_team"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:text="Home Wins"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+            />
+        <TextView
+            android:id="@+id/total_home_wins_away_team"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/total_away_wins_home_team"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:text="Away Wins"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+            />
+        <TextView
+            android:id="@+id/total_away_wins_away_team"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

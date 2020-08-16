@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="table.football.soccer.livescore.epl.epllive.Fragments_match.Fragment_match_stats">
+
+    <ProgressBar
+        android:id="@+id/progress_stat"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nest_scorll"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/statView"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:id="@+id/CommentryStatus_Text"
+                android:text="Stats Not Available"
+                />
+
+            <!--Live MatchStats-->
+            <include layout="@layout/nested_stats_statistics"/>
+
+
+            <!--Head to Head-->
+            <include layout="@layout/neseted_stats_statistics_head"/>
+            <!--Season SO for-->
+            <include layout="@layout/neseted_stats_season_so"/>
+
+            <include layout="@layout/nested_stats_recent_meeting"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+</LinearLayout>

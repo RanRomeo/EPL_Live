@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#1b001d"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="table.football.soccer.livescore.epl.epllive.Fragments.Fragment_stats">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stats"
+                android:padding="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/black_drawble"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current Season"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:padding="5dp"
+
+                    />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/stats_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+
+                    />
+
+                <!--Player stuff-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="180dp"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/colorPrimaryDark"
+                        >
+
+                        <!--goal_layout-->
+                        <LinearLayout
+                            android:id="@+id/goal_layout"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="0.6"
+                            android:visibility="invisible"
+                            >
+
+                            <ImageView
+                                android:id="@+id/top_goal_player_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.43"
+                                android:src="@drawable/playe_pic"
+                                />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimary"
+                                />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.17">
+
+                                <TextView
+                                    android:id="@+id/player_goal_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="4"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Goals"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="180dp"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/colorPrimaryDark"
+                        >
+
+                        <!--assest_layout-->
+                        <LinearLayout
+                            android:id="@+id/assist_layout"
+                            android:visibility="invisible"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="0.6"
+                            >
+
+                            <ImageView
+                                android:id="@+id/top_assist_player_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.43"
+                                android:src="@drawable/playe_pic"
+                                />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimary"
+                                />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.17">
+
+                                <TextView
+                                    android:id="@+id/player_assist_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="4"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Assists"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <!--Ad View-->
+                <LinearLayout
+                    android:id="@+id/banner_container"
+
+                   android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.gms.ads.AdView
+                        xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="@string/GoogleBanner_AD_Unit">
+                    </com.google.android.gms.ads.AdView>
+
+
+                </LinearLayout>
+
+                <!--Team stuff-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="180dp"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/colorPrimaryDark"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/team_top_gaole_cantinaer"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="0.6"
+                            >
+                            <!--Team Image-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.43"
+                                android:gravity="center"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/top_team_image_goal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_margin="40dp"
+
+                                    />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimary"
+                                />
+
+                            <!--Goals Textview-->
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.17">
+
+                                <TextView
+                                    android:id="@+id/team_goal_nubmer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Goals"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="180dp"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/colorPrimaryDark"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/clean_sheets_container"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="0.6"
+                            >
+                            <!--Team Image-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.43"
+                                android:gravity="center"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/team_clean_sheets_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_margin="40dp"
+
+                                    />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:background="@color/colorPrimary"
+                                />
+
+                            <!--Goals Textview-->
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.17">
+
+                                <TextView
+                                    android:id="@+id/team_clean_sheets_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Clean sheets"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textStyle="bold"
+                                    />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+
+
+            <include
+                layout="@layout/nested_stats_button"
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

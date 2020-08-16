@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Match_stats_live"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Statistics"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        />
+
+    <!--Possesion-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_possesion_home_team"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextStart"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Possession%"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/text_possesion_away_team"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorStart"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <!--shots on target-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_shots_on_target_home_team"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextStart"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Shots on target"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/text_shots_on_target_away_team"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorStart"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <!--shots-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_shots_home_team"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextStart"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Shots"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/text_shots_away_team"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorStart"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <!--touches-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_touches_home_team"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextStart"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Touches"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/text_touches_away_team"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorStart"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <!--passes-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_passes_home_team"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextStart"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Passes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/text_passes_away_team"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorStart"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <!--tackles-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_tackles_home_team"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextStart"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tackles"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/text_tackles_away_team"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorStart"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <!--clearances-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_clearance_home_team"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextStart"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Clearances"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/text_clearance_away_team"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorStart"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <!--corners-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_corners_home_team"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextStart"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Corners"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/text_corners_away_team"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorStart"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <!--offsiedes-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_offsides_home_team"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextStart"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="offsides"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/text_offsides_away_team"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorStart"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <!--yellow cards-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_yellow_cards_home_team"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextStart"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Yellow Cards"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/text_yellow_cards_away_team"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorStart"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <!--red cards-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_red_cards_home_team"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextStart"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Red Cards"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/text_red_cards_away_team"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorStart"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <View style="@style/Divider"/>
+    <!--fouls conceed-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_fouls_home_team"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="36.5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorTextStart"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Fouls conceded"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <TextView
+            android:id="@+id/text_fouls_away_team"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="65.5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorStart"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

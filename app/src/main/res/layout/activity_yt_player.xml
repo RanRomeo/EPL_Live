@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="table.football.soccer.livescore.epl.epllive.activity_yt_player">
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_player"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+
+        >
+
+    </com.google.android.youtube.player.YouTubePlayerView>
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:visibility="visible"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/GoogleBanner_AD_Unit">
+        </com.google.android.gms.ads.AdView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="More Videos"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/moreVideos_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/VideoLoading_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:indicatorName="BallScaleMultipleIndicator"
+            app:indicatorColor="@color/colorAccent"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Video_rec_yt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

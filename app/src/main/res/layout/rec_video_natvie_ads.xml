@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/Ad_layout"
+
+    android:layout_width="270dp"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="280dp">
+
+
+    <com.facebook.ads.MediaView
+        android:id="@+id/mediaView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+       />
+
+    <!--sponsored labe,adcoic contaner,Ad_text_body-->
+    <LinearLayout
+        android:layout_margin="6dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/sponsored_label"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:lines="1"
+            android:text="Sponsored"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <LinearLayout
+            android:id="@+id/adChoicesContainer"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical" />
+
+
+    </LinearLayout>
+    <!--ADBoady-->
+    <TextView
+        android:id="@+id/tvAdBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/darker_gray"
+        tools:text="This is an ad description."/>
+
+    <!--adIcon,adTitle,btnclick-->
+    <LinearLayout
+        android:layout_margin="6dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.facebook.ads.AdIconView
+            android:id="@+id/adIconView"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            tools:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tvAdTitle"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/white"
+            tools:text="Ad Title"/>
+
+        <Button
+            android:id="@+id/btnCTA"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="Install Now"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/holo_blue_dark"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

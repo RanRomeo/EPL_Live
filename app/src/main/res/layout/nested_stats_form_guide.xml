@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorStart"
+        android:text="Form Guide"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        />
+
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+         <android.support.v7.widget.RecyclerView
+             android:id="@+id/rec_form_guide_home_team"
+             android:layout_width="0dp"
+             android:layout_weight="0.5"
+             android:layout_gravity="end"
+             android:layout_height="match_parent">
+         </android.support.v7.widget.RecyclerView>
+
+         <android.support.v7.widget.RecyclerView
+             android:id="@+id/rec_form_guide_away_team"
+             android:layout_width="0dp"
+             android:layout_weight="0.5"
+             android:layout_height="match_parent">
+         </android.support.v7.widget.RecyclerView>
+     </LinearLayout>
+
+
+
+
+</LinearLayout>

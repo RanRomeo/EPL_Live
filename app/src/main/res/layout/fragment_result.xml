@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Swipe"
+    tools:context="table.football.soccer.livescore.epl.epllive.Fragments_Fixture.Fragment_result">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress_upcoming"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/ErrorTextView"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Something Went Wrong"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecyclerView_upcoming"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                ></android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

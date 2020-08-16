@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Defence"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--clean sheets-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defence_compare_clean_sheets_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Clean Sheets"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/defence_compare_clean_sheets_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--goals conceded-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defence_compare_goalConceded_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Goals Conceded"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/defence_compare_goalConceded_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--goals conceded per match-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defence_compare_goalConcededPMatch_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Goals conceded/match"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/defence_compare_goalConcededPMatch_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--saves-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defence_compare_saves_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Saves"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/defence_compare_saves_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--tackels-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defence_compare_tackles_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Tackels"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/defence_compare_tackles_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--tackle sucess %-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defence_compare_tacklesSucess_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Tackle Sucess %"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/defence_compare_tacklesSucess_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+
+
+
+        <!--Blocked shots-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defence_compare_blaocked_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Blocked Shots"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/defence_compare_blaocked_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--interceptions-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defence_compare_interceptions_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Interceptions"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/defence_compare_interceptions_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--clearances-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defence_compare_clearances_fisrt"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Clearances"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/defence_compare_clearances_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+
+        <!--headed clearance-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defence_compare_headedClearnce_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Headed Clearance"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/defence_compare_headedClearnce_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--own goals-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defence_compare_Own_goals_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Own Goals"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/defence_compare_Own_goals_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--penalties conceded-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defence_compare_PenaltiesCOn_first"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Penalties Conceded"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/defence_compare_PenaltiesCOn_second"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="5dp"
+        />
+</LinearLayout>

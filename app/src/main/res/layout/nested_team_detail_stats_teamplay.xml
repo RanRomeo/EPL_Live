@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Team Play"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Passes-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Passes"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/tect_view_passes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="40%"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Passes per match-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Passes per match"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/textview_passes_per_match"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="40%"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Pass Accuracy-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pass accuracy %"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/textviewpass_perce"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="40%"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--crooses-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Crosses"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/textview_crosses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="40%"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--cross accuracy%-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cross accuracy"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/text_view_crooss_accur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="40%"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="5dp"
+        />
+
+</LinearLayout>

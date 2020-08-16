@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorText"
+    tools:context="table.football.soccer.livescore.epl.epllive.Fragment_home.Video_fragment">
+
+
+
+
+
+  <RelativeLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+      <LinearLayout
+          android:id="@+id/Layout_Container"
+          android:visibility="gone"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:gravity="start|center"
+              android:layout_marginTop="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="ESPN FC-Latest Footbal News"
+                  android:layout_marginStart="15dp"
+                  android:gravity="center"
+                  android:textColor="@color/colorGrey"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                  />
+
+              <android.support.v7.widget.CardView
+                  android:layout_margin="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  app:cardCornerRadius="4dp"
+                  >
+
+                  <android.support.v7.widget.RecyclerView
+                      android:id="@+id/rec_espn"
+
+                      android:background="@color/colorPrimary"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+
+                  </android.support.v7.widget.RecyclerView>
+
+              </android.support.v7.widget.CardView>
+
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:gravity="start|center"
+              android:layout_marginTop="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="442oons-Football world- animated!"
+                  android:layout_marginStart="15dp"
+                  android:gravity="center"
+                  android:textColor="@color/colorGrey"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                  />
+
+              <android.support.v7.widget.CardView
+                  android:layout_margin="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  app:cardCornerRadius="4dp"
+                  >
+
+                  <android.support.v7.widget.RecyclerView
+                      android:id="@+id/rec_toons"
+
+                      android:background="@color/colorPrimary"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+
+                  </android.support.v7.widget.RecyclerView>
+
+              </android.support.v7.widget.CardView>
+
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:gravity="start|center"
+              android:layout_marginTop="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Sky Sports-analysis,debates"
+                  android:layout_marginStart="15dp"
+                  android:gravity="center"
+                  android:textColor="@color/colorGrey"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                  />
+
+              <android.support.v7.widget.CardView
+                  android:layout_margin="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  app:cardCornerRadius="4dp"
+                  >
+
+                  <android.support.v7.widget.RecyclerView
+                      android:id="@+id/rec_skyspots"
+
+                      android:background="@color/colorPrimary"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+
+                  </android.support.v7.widget.RecyclerView>
+
+              </android.support.v7.widget.CardView>
+
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:gravity="start|center"
+              android:layout_marginTop="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Football Daily-Public Opinion"
+                  android:layout_marginStart="15dp"
+                  android:gravity="center"
+                  android:textColor="@color/colorGrey"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                  />
+
+              <android.support.v7.widget.CardView
+                  android:layout_margin="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  app:cardCornerRadius="4dp"
+                  >
+
+                  <android.support.v7.widget.RecyclerView
+                      android:id="@+id/rec_footballdaily"
+
+                      android:background="@color/colorPrimary"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+
+                  </android.support.v7.widget.RecyclerView>
+
+              </android.support.v7.widget.CardView>
+
+
+          </LinearLayout>
+
+      </LinearLayout>
+
+
+      <com.wang.avi.AVLoadingIndicatorView
+          android:id="@+id/video_loading"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          />
+
+
+
+  </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

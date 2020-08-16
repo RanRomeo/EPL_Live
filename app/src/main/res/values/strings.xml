@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EPL</string>
+    <!--   <string name="BannerAdUnit">ca-app-pub-3077940593628980/8070556127</string> -->
+      <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Twitter  starts-->
+    <string name="CONSUMER_KEY">21InV9fShthHL2nWE3w8OZ0ti</string>
+    <string name="CONSUMER_SECRET">7gzv41oGlg5RGq7P5Etu5JNyO8UfPf26TGHFASou9yCJz2WCax</string>
+    <!-- Twitter ends -->
+
+    <!-- Admob  Banner Starts 2nd id ca-app-pub-4946141721417781/1367449037-->
+    <string name="GoogleAppID">ca-app-pub-4946141721417781~1779860079</string>
+    <string name="GoogleBanner_AD_Unit">ca-app-pub-4946141721417781/3004972521</string>
+    <!-- Admob Banner Ends-->
+    <!--Test Banner-->
+    <string name="TestGoogleBanner">ca-app-pub-3940256099942544/6300978111</string>
+    <!--End Test Banner -->
+
+    <!--Inter gooleid ca-app-pub-4946141721417781/5260901519-->
+    <!--Inter Test gooleid ca-app-pub-3940256099942544/1033173712-->
+    <string name="GoogleInter">ca-app-pub-4946141721417781/5260901519</string>
+
+
+    <string name="default_notification_channel_name" translatable="true">Match Notification</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <!-- Facebook  Banner Starts-->
+    <!--  <string name="GoogleAppID">ca-app-pub-4946141721417781~1779860079</string>-->
+     <string name="Facebook_bannerAd">290383128344061_290384028343971</string>
+     <!-- Facebook Banner Ends-->
+    <string name="facebook_app_id">290383128344061#</string>
+    <string name="Facebook_intertial">290383128344061_290384328343941</string>
+
+    <string name="Facebook_native_ads">290383128344061_290384425010598</string>
+
+    <!--Text View -->
+    <string name="CopyRightText">No copyright infringment is intended,and any request to remove one of the images/logos/name will be
+    honored.This is a unofficial application and we are not affiliated with,approved ,sponsored,or approved specifically by any company.</string>
+
+
+</resources>

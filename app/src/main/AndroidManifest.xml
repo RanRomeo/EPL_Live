@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="table.football.soccer.livescore.epl.epllive">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Match_Activity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="Match_Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Team_Detail"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Player_activity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity_player_stats"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity_team_stats"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".notification_setting_activity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".activity_yt_player"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="VideoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- [START firebase_service] -->
+        <service
+            android:name=".notification_services.MyFirebaseMessagingService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <!-- [END firebase_service] -->
+
+        <activity android:name=".Team_comparision_activity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="Team_comparision_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".news_display_activity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="New_Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.table.football.soccer.livescore.epl.epllive"
+            android:value="ca-app-pub-4946141721417781~1779860079" />
+
+        <activity android:name=".CopyRight_Activity"
+            android:screenOrientation="portrait"
+            ></activity>
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7a53ceb896b39e7b1b40b66d379ccfb4b0a7ee87" />
+
+
+    </application>
+
+</manifest>

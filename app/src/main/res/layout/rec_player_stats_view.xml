@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:gravity="start"
+        android:layout_margin="20dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_possition_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:id="@+id/text_name_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eden Hazard"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/text_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brazil"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+
+        <TextView
+            android:id="@+id/text_stat_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:textColor="@color/foulcolorRed"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/player_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/missing_thumb"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyCustomTablayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#ffffff</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+
+
+    <style name="MyRandomTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Tool bar bavk button -->
+        <item name="colorControlNormal">@color/colorPrimary</item>
+    </style>
+
+    <!-- Switch button -->
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#46bdbf</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#383636</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+
+    <!--Dailog-->
+    <style name="dialog_theme" parent="android:Theme" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <!--MyTeamProgressclolo-->
+    <style name="AppThemeAccent_progress">
+        <item name="colorAccent">@color/colorText</item> <!-- Whatever color you want-->
+    </style>
+</resources>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Overview"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--wins-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:id="@+id/overview_compare_first_wins"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Wins"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/overview_compare_second_wins"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Losses-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/overview_compare_first_losses"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Losses"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/overview_compare_second_losses"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Draw-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/overview_compare_first_draw"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Draw"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/overview_compare_second_draw"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+
+        <!--Goals-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/overview_compare_first_goals"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="0"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Goals"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/overview_compare_second_goals"
+                android:text="0"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+
+
+
+        <!--Substitution-->
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="5dp"
+        />
+</LinearLayout>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Attack"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Goals-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Goals"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/textView_goals"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Goals per match-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Goals per match"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/text_view_goals_per_match"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Shots-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Shots"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/text_view_shots"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Shots on target-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Shots on target"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/text_view_shots_on_target"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Shooting accuracy %-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Shooting accuracy%"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/textView_shooting_accuracy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Penalites scored-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Penalties scored"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/textView_penalties_scored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Big chance creatd-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Big chances created"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/text_view_bigChance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <!--Hit woodwork-->
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Hit woodwork"
+                android:layout_weight="0.8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <TextView
+                android:id="@+id/text_view_hit_wood"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_weight="0.2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="5dp"
+        />
+
+</LinearLayout>

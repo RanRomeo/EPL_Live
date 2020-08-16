@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="table.football.soccer.livescore.epl.epllive.Fragment_home.News_fragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true">
+
+
+
+
+
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:background="@color/colorPrimary"
+               android:layout_height="wrap_content">
+
+
+
+               <LinearLayout
+                   android:layout_margin="5dp"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:id="@+id/featured_videos_text"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Featured Videos"
+                       android:layout_margin="3dp"
+                       android:textColor="@color/colorText"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:visibility="gone"
+
+                       />
+
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/top_video_rec"
+                       android:visibility="gone"
+                       android:layout_width="match_parent"
+                       android:layout_margin="2dp"
+                       android:layout_height="wrap_content">
+
+
+                   </android.support.v7.widget.RecyclerView>
+
+                  <LinearLayout
+                      android:id="@+id/liveMatch_Lay"
+                      android:visibility="gone"
+                      android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Featured  Matches"
+                          android:layout_margin="3dp"
+                          android:textColor="@color/colorText"
+                          android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+
+                          />
+
+                      <android.support.v7.widget.RecyclerView
+                          android:id="@+id/today_match_rec"
+                          android:layout_width="match_parent"
+                          android:layout_margin="2dp"
+                          android:layout_height="wrap_content">
+
+
+                      </android.support.v7.widget.RecyclerView>
+
+
+                  </LinearLayout>
+
+
+                   <com.wang.avi.AVLoadingIndicatorView
+                       android:id="@+id/LoadingProgresNews"
+                       android:layout_gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="30dp"
+                       app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                       app:indicatorName="BallBeatIndicator"
+                       app:indicatorColor="@color/colorPrimaryDark"
+                       app:layout_anchorGravity="top"
+
+                       />
+
+               </LinearLayout>
+
+
+                <!--GifRecycker-->
+               <!--
+
+               <LinearLayout
+                   android:layout_margin="5dp"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Recommended GIFs"
+                       android:textColor="@color/colorText"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                       android:layout_margin="3dp"
+                       />
+
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/top_gif_rec"
+                       android:layout_width="match_parent"
+                       android:layout_margin="2dp"
+                       android:layout_height="wrap_content">
+
+
+                   </android.support.v7.widget.RecyclerView>
+
+
+
+               </LinearLayout>
+-->
+           </LinearLayout>
+
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/news_recycler"
+        android:visibility="visible"
+        android:layout_marginTop="5dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layoutDirection="rtl"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/form_guide_text_result"
+        android:text="W"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/circular_textview_drawable"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/form_guide_text_place"
+        android:text="H"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/form_guide_match_image"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_logo_arsenal_club"
+        />
+
+    <TextView
+        android:id="@+id/form_guide_team_and_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1-2 v Everton"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+</LinearLayout>

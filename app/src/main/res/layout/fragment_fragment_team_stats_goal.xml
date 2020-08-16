@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="table.football.soccer.livescore.epl.epllive.Fragment_stats_team.Fragment_team_stats_goal">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+                android:text="Pos"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:text="Team"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:text="Value"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/player_stats_rec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/ErrorTextView"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sorry,Something Went Wrong"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textAlignment="center"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

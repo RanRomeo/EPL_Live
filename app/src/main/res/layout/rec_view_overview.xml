@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+
+
+
+    <!--HomeTeam-->
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingEnd="10dp"
+
+        android:gravity="start|center"
+        android:layout_width="0dp"
+        android:layout_weight="0.4"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <!--Player one-->
+        <LinearLayout
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:id="@+id/home_player_pic"
+                   android:layout_width="90dp"
+                   android:layout_height="90dp"
+                />
+
+            <ImageView
+                android:id="@+id/home_event_type_pic"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                />
+        </LinearLayout>
+
+
+         <TextView
+             android:id="@+id/home_player_name"
+             android:layout_gravity="center_horizontal"
+             android:gravity="start"
+             android:maxLines="1"
+             android:paddingLeft="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             />
+
+     </LinearLayout>
+     <!--Player two-->
+        <LinearLayout
+            android:id="@+id/home_event2"
+            android:visibility="gone"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/home_player_pic2"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/home_event_type_pic2"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/home_player_name2"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--MiddleHeader-->
+    <LinearLayout
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:layout_width="0dp"
+       android:layout_weight="0.2"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+
+
+       <View
+           android:gravity="center"
+           android:paddingTop="5dp"
+           android:layout_width="1dp"
+           android:layout_height="100dp"
+           android:background="#FF0000FF" />
+
+
+        <TextView
+            android:id="@+id/event_time"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark" />
+
+       <TextView
+           android:id="@+id/event_score"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:textColor="@color/colorPrimaryDark"
+           />
+
+       <View
+           android:gravity="center"
+           android:paddingTop="5dp"
+           android:layout_width="1dp"
+           android:layout_height="100dp"
+           android:background="#FF0000FF" />
+   </LinearLayout>
+    <!--AwayTeam-->
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:gravity="start|center"
+
+        android:layout_height="wrap_content">
+        <!--APlayer one-->
+       <LinearLayout
+           android:paddingEnd="10dp"
+           android:gravity="center"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:id="@+id/away_event_type_pic"
+                   android:layout_gravity="center"
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+
+
+                   />
+
+               <ImageView
+                   android:id="@+id/away_player_pic"
+
+                   android:layout_width="90dp"
+                   android:layout_height="90dp"
+                   />
+
+
+
+
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/away_player_name"
+               android:gravity="center"
+               android:maxLines="1"
+               android:text=""
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingRight="3dp"
+               />
+
+
+       </LinearLayout>
+        <!--APlayer two-->
+        <LinearLayout
+            android:id="@+id/away_event2"
+            android:paddingEnd="10dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/away_event_type_pic2"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/away_player_pic2"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/away_player_name2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="3dp"
+                android:maxLines="1"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    tools:context="table.football.soccer.livescore.epl.epllive.Team_Detail">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="290dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="@dimen/activity_margin_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+
+
+
+
+
+            <RelativeLayout
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:fitsSystemWindows="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                >
+
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/Team_Back_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backpng"
+                    android:scaleType="fitXY"
+                    />
+
+
+                <LinearLayout
+                    app:layout_collapseMode="parallax"
+                    android:id="@+id/team_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bacground_shape"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team_image_view"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_logo_arsenal_club" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Team_club_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Liverpool"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Team_Statduim_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="16dp"
+                            android:text="King Power Statdium"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/anim_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/home_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:tabTextColor="@color/colorTextStart"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabMode="scrollable"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_fragment_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:visibility="gone"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/GoogleBanner_AD_Unit">
+            </com.google.android.gms.ads.AdView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

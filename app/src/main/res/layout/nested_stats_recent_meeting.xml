@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recentMeeting"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorStart"
+        android:text="Recent Meetings"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_recent_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

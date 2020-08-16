@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="table.football.soccer.livescore.epl.epllive.MainActivity">
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <FrameLayout
+            android:id="@+id/flcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_marginBottom="56dp"
+            >
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/custom_bootom_linear_layout"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:weightSum="5"
+            android:background="@color/colorPrimaryDark"
+            >
+
+            <LinearLayout
+                android:id="@+id/home_linear"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/home_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home_black_24dp"
+                    android:background="@android:color/transparent"
+                    />
+
+                <TextView
+                    android:id="@+id/home_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Home"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fixture_linear"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/fixture_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_event_available_black_24dp"
+                    android:background="@android:color/transparent"
+                    />
+
+                <TextView
+                    android:id="@+id/fixture_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Fixture"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fav_linear"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/my_team_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_selected_24dp"
+                    android:background="@android:color/transparent"
+                    />
+
+                <TextView
+                    android:id="@+id/my_team_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="MyTeam"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/table_linear"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/table_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chart_black_24dp"
+                    android:background="@android:color/transparent"
+                    />
+
+                <TextView
+                    android:id="@+id/table_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Table"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/more_linear"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/more_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    android:background="@android:color/transparent"
+                    />
+
+                <TextView
+                    android:id="@+id/more_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="More"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

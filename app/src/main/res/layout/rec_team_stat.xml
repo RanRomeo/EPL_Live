@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/text_poss"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorText"
+            />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:padding="5dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_team_name"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Tottenham Hotspur"
+                android:gravity="center|start"
+                android:paddingStart="15dp"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+
+           <ImageView
+               android:id="@+id/clubImage"
+               android:layout_width="0dp"
+               android:layout_weight="0.2"
+               android:layout_height="match_parent"
+
+               android:src="@drawable/ic_logo_arsenal_club"
+               />
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/value_text"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"
+            android:text="0001"
+            android:gravity="center"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

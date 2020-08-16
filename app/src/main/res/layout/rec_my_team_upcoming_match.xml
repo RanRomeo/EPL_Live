@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="4dp"
+    android:layout_margin="5dp"
+
+    >
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        >
+
+
+
+
+
+        <TextView
+            android:id="@+id/match_date_text"
+            android:textColor="@color/colorStart"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saturday 18 August 2018"
+            />
+
+        <TextView
+            android:id="@+id/match_statdium_text"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goodison Park, Liverpool"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:weightSum="1.05"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.425"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/match_image_home"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_logo_arsenal_club"
+                    />
+
+
+                <TextView
+                    android:id="@+id/match_home_team_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crystal Palace"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:maxLength="16"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.20"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/match_team_score"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:text="VS"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:textAllCaps="true"
+                    android:layout_height="30dp"
+                    android:textColor="@color/colorText"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="2dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.425"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/match_image_away"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_logo_arsenal_club"
+                    />
+                <TextView
+                    android:id="@+id/match_away_team_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:layout_gravity="center"
+                    android:text="AFC Bournemoth"
+                    android:maxLength="16"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

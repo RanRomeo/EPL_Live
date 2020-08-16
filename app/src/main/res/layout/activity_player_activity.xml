@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    tools:context="table.football.soccer.livescore.epl.epllive.Player_activity">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/layout_container"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+
+            <LinearLayout
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:layout_behavior ="@string/appbar_scrolling_view_behavior"
+                >
+
+
+                <ImageView
+                    android:id="@+id/PLayerImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:scaleType="centerInside"
+
+                    />
+
+
+            </LinearLayout>
+
+            <!--Name Text-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1">
+
+                <TextView
+                    android:id="@+id/player_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    />
+            </LinearLayout>
+
+
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll"
+            app:layout_behavior ="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <include
+                        android:id="@+id/player_overView_container"
+                        layout="@layout/nested_player_overview"
+                        />
+
+                    <include
+                        android:id="@+id/player_record_container"
+                        layout="@layout/nested_player_recodes_league"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:id="@+id/Progres_contariner"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/player_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/player_reload_button"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Reload"
+            android:background="@color/colorAccent"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        app:layout_behavior ="@string/appbar_scrolling_view_behavior"
+
+        android:id="@+id/banner_container"
+        android:visibility="visible"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/GoogleBanner_AD_Unit">
+        </com.google.android.gms.ads.AdView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

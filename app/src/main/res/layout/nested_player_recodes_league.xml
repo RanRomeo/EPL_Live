@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorAccent"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Premier League Record"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <!--Appearance-->
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        />
+    <LinearLayout
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:text="Appearances"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/player_appearance"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:padding="5dp"
+            android:text="23"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <!--Goals-->
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        />
+    <LinearLayout
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:text="Goals"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/player_goals"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:padding="5dp"
+            android:text="23"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <!--Assists-->
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        />
+    <LinearLayout
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:text="Assists"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/player_assist"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:padding="5dp"
+            android:text="19/03/1995"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <!--Clean sheetes-->
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        />
+    <LinearLayout
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:text="Clean sheets"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/player_clean_Sheets"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:padding="5dp"
+            android:text="19/03/1995"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

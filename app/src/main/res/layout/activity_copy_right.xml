@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CopyRight_Activity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:text="About"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_round"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/CopyRightText"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            />
+
+
+        <Button
+            android:id="@+id/contact_use_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/colorAccent"
+            android:text="Contact Us"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:visibility="visible"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/GoogleBanner_AD_Unit">
+        </com.google.android.gms.ads.AdView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

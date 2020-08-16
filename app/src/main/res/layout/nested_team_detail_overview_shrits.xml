@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/team_overView"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_club"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Club Kits"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Link To Seller"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <!--Home Kit-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home Kit"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            />
+        <ImageView
+            android:id="@+id/image_view_home_kit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kit_loadgin"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            />
+        <Button
+            android:id="@+id/home_button_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy Now"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <!--Away Kit-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Away Kit"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            />
+        <ImageView
+            android:id="@+id/image_view_away_kit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kit_loadgin"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            />
+        <Button
+            android:id="@+id/away_button_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy Now"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <!--Third Kit-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home Kit"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            />
+        <ImageView
+            android:id="@+id/image_view_third_kit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kit_loadgin"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            />
+        <Button
+            android:id="@+id/third_button_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy Now"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+
+
+</LinearLayout>

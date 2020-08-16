@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="270dp"
+android:orientation="vertical"
+android:background="@color/colorPrimaryDark"
+android:layout_height="280dp">
+
+
+<ImageView
+    android:id="@+id/image_view"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:src="@drawable/yt_med_thumb"
+    android:scaleType="fitXY"
+    />
+
+
+
+
+
+<TextView
+    android:id="@+id/video_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Making sense of Kylian Mbappe, Eden Hazard and Real Madrid situation | Extra Time"
+    android:textColor="@color/colorPrimary"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="10dp"
+    />
+
+
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="end|center"
+        android:layout_width="0.7dp"
+
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

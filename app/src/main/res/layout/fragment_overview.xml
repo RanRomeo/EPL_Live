@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="table.football.soccer.livescore.epl.epllive.Fragments_match.Fragment_overview">
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <LinearLayout
+            android:weightSum="6"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/goal_"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Goal"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/own_goal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O Goal"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/pengoal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P Goal"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/assist"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assist"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/sub2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub In"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/sub_out"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Out"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:id="@+id/CommentryStatus_Text"
+            android:text="OverView Not Available"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Rec_overView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

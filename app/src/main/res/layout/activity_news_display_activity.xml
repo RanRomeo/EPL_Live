@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="table.football.soccer.livescore.epl.epllive.news_display_activity">
+
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/reload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Relaod"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/progress_bar"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+</RelativeLayout>
